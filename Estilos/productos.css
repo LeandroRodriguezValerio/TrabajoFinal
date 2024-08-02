@@ -1,0 +1,163 @@
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content:space-evenly;
+    gap: 5px;
+    padding: 15px;
+    border: 3px solid rgb(223, 184, 129);
+    border-radius: 10px;
+    height: 100%;
+    width: 60vw;
+    min-width: 350px;
+    margin: 5px;
+    background-image: url(../Estilos/Imagenes/banner.png);
+    margin: 10px 0;
+    background-color: #F3E5AB;   
+    
+}
+.contCentroDer{    
+    background: linear-gradient(90deg, rgba(203, 156, 28, 0.5) 0%, rgba(214,197,154,0.5) 50%, rgba(214,147,52,0.5) 100%);
+    border: 3px solid rgb(223, 184, 129);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.contCentroDer h3{  
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; font-size: 40px; 
+    background: #806033; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    margin: 3px;
+}
+#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.imgProd{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 7em;
+    width: 7em;
+    border: 3px ridge rgb(246, 218, 175);
+    border-radius: 10%;
+    min-width: 100px;
+    min-height: 100px;
+    margin-right: 15px;  
+}
+
+.img0{
+    background-image: url(../Estilos/Imagenes/Productos/Carne.jpg);
+}
+.img1{
+    background-image: url(../Estilos/Imagenes/Productos/Pollo.jpg);
+}.img2{
+    background-image: url(../Estilos/Imagenes/Productos/Salamin.jpg);
+}.img3{
+    background-image: url(../Estilos/Imagenes/Productos/Fideos.jpg);
+}.img4{
+    background-image: url(../Estilos/Imagenes/Productos/Harina.png);
+}.img5{
+    background-image: url(../Estilos/Imagenes/Productos/Leche.png);
+}.img6{
+    background-image: url(../Estilos/Imagenes/Productos/Polenta.jpg);
+}.img7{
+    background-image: url(../Estilos/Imagenes/Productos/Vino.jpg);
+}.img8{
+    background-image: url(../Estilos/Imagenes/Productos/Yerba.webp);
+}.img9{
+    background-image: url(../Estilos/Imagenes/Productos/Azucar.jpg);
+}
+
+
+
+.producto p {
+    margin: 0;
+    font-size: 25px;
+    color: rgb(129, 79, 11);
+}
+
+
+.producto button {
+    background-color: rgb(129, 79, 11);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.producto button:hover {
+    background-color: rgb(96, 60, 10);
+}
+
+
+.producto input{
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 155, 86);
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+
+.finCompra {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid rgb(192, 155, 86);
+    font-size: 22px;
+    color: rgb(129, 79, 11);
+    background-image: url(../Estilos/Imagenes/banner.png);
+    border-radius: 5px;    
+    width:40%;
+    min-width: 300px;
+    height: fit-content;
+    
+}
+.contTotal{
+display: flex;
+justify-content: center;
+margin-bottom: 5px;
+}
+
+.finCompra span {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(129, 79, 11);
+}
+
+
+.finCompra button {
+    background-color: rgb(129, 79, 11);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+
+.finCompra button:hover {
+    background-color: rgb(98, 61, 10);
+}
+

@@ -1,0 +1,389 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fondo{
+    background-image: url(./Imagenes/fondotrigos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center; 
+    align-items:normal;
+    align-content: flex-start;
+    padding-top: 1em;
+    text-align: center;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    border: 5px rgb(141, 113, 30) solid;
+    border-radius: 10px;
+    padding: 5px;
+    height: fit-content;
+    width: 90%;
+    background-color: rgba(154, 115, 73, 0.849);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 7em;
+    width: 7em;
+    border: 3px dashed rgb(225, 217, 203);
+    border-radius: 10%;
+}
+nav{
+    background-image: url(./Imagenes/banner.png);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 4px;
+    border: 4px rgb(176, 107, 21) solid;
+    border-radius: 10px;
+    padding: 3px;
+    height: 7em;
+    width: 90%;
+    background-color: rgba(201, 186, 149, 0.271);
+    justify-content:space-evenly;
+    align-items: center;
+}
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.imagenNav{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 7em;
+    width: 7em;
+    border: 3px solid rgb(176, 117, 17);
+    border-radius: 8px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.botonInicio{
+    background-image: url(./Imagenes/LogoHome.jpg);
+}
+.btnnav:hover{
+    border: black 3px  dashed;
+    opacity: 70%;
+}
+.botonTienda{
+    background-image: url(./Imagenes/carrodecompras.jpg);
+
+    }
+.botonContacto{
+    background-image: url(./Imagenes/Telefon.jpg);
+    
+}
+header nav a {
+    text-align: left; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    text-decoration: none;
+    font-size: 15px; 
+    color: #fff; 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+
+.contenedorCentro{
+    display: flex;
+    margin-top: 5px;
+    width: 90vw;
+    height: fit-content;   
+}
+.tituloMarca {
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; font-size: 20px; 
+    background: #202020; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(239, 191, 58, 0.4),0px -1px 1px rgba(0,0,0,0.3);
+    }
+.tituInicio{
+        font-weight: bold; font-size: 15px;
+        text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4),0px -1px 1px rgba(0,0,0,0.3);
+    }
+.nomPagina{
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: rgb(161,101,25);
+    background: radial-gradient(circle, rgb(231, 195, 147) 0%, rgb(201, 145, 14) 100%);
+    margin-top: 5px;
+    width: 7em;
+    height: 7em;
+    border: 3px solid rgb(176, 117, 17);
+    border-radius: 8px;
+}
+
+
+.bannerParado{
+    background-image: url(./Imagenes/bannerparado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 8px;
+    border: 3px solid rgb(161, 132, 27); 
+    
+    
+} 
+
+.contenedorDer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    border-radius: 8px;
+    align-items: center;
+    align-content: space-evenly;    
+}
+
+.imgBanIsq{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;   
+    text-decoration: none;
+    
+}
+
+
+.menu a {
+    display: block;
+    color: rgb(136, 72, 7); 
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+.menu a:hover {
+    background-color: rgb(220, 189, 137); 
+    color: white;
+}
+
+.imgSuper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    align-content: center;
+    background-image: url(../Estilos/Imagenes/imgSuper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    border-radius: 8px;
+    margin: 0%;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 40%;
+    background-color: rgba(150, 129, 63, 0.668);
+    border: 3px solid rgb(161, 132, 27);  
+    
+}
+
+.encontranos{    
+    color: rgb(30, 26, 26);
+    background-color: rgba(250, 210, 151, 0.53);
+    border-radius: 10%;
+    align-self: baseline;
+    font-size: 17px;
+    margin: 0%;
+    margin-bottom: 4px; 
+}
+.encontranos p{
+    margin: 0%;
+    font-weight: bold;
+    color: #4f3210;
+    padding: 2px;
+}
+
+.contOfertas{
+    display: flex;   
+    height: 10em;
+    width: 98%;
+    gap: 3px;
+    background-color: rgba(0, 255, 255, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+div span .spanOferta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 3em;
+    initial-letter-align: 0%;
+    
+}
+div span h3{
+    font-size: 20px;
+}
+.oferta a{
+    text-decoration: none;
+}
+a h3{
+    color: inherit;
+    text-decoration:none
+}
+a h3{
+    display: block;
+    color: rgb(103, 59, 16); 
+    font-size: 30px;   
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;    
+}
+
+
+a h3:hover {
+    background-color: rgb(152, 186, 87); 
+    color: white;
+}
+.oferta {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 40%;
+    background: rgb(60,49,15);
+    background: radial-gradient(circle, rgba(187,111,13,1) 0%, rgba(240,237,148,1) 100%);
+    border: 3px solid rgb(161, 132, 27);
+    border-radius: 8px;
+}
+span h3{
+    margin: 0%;
+}
+.of1{
+    font-size: 20px;
+    margin: 0%;
+}
+.tachaRojo{
+    color: rgb(187, 29, 29);
+    text-decoration: line-through;
+    font-weight: bold;
+    text-shadow: 3px 
+     
+}
+.ofertaVerde{
+    color: rgb(43, 174, 54);
+    text-decoration:underline;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 
+        1px 1px 0 black, 
+        -1px -1px 0 rgb(224, 231, 14), 
+        1px -1px 0 black, 
+        -1px 1px 0 rgb(14, 27, 215);
+}
+.imgOferta{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 7em;
+    width: 7em;
+    border: 3px dashed rgb(225, 217, 203);
+    border-radius: 10%;
+}
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 97%;
+    min-height: 500px;   
+    background-image: url(../Estilos/Imagenes/Fondo-de-texto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 8px;
+    border: 3px solid rgb(161, 132, 27);
+    margin: 5px;
+    margin-bottom: 5px;
+}
+.historia h3{  
+    font-family: Comic Sans MS Black; 
+    font-weight: bold; font-size: 40px; 
+    background: #8d5612; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.historia p{
+    padding-right: 40px; 
+    padding-left: 40px;
+    text-align: justify;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif Black;
+}
+footer {
+    margin-top: 5px;
+    background-color: rgb(195, 135, 23);
+    padding: 20px 0;
+    text-align: center;   
+    bottom:0;
+    width: 100%;
+   
+}
+.contFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contFooter p {
+    margin: 5px 0;
+    color: #e0d8d8;
+}
+.contFooter a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contFooter a:hover {
+    text-decoration: underline;
+}
+
+.contCentroDer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 172, 142, 0);
+}
