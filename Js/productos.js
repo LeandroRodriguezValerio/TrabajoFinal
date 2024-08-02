@@ -46,7 +46,7 @@ arrProductos.forEach((producto,index) => {
     botonCompra.appendChild(btncomprar);
     contenedor.appendChild(crearcontenedor);
 
-    botonCompra.addEventListener("click", () => validar(input.value, index));
+    botonCompra.addEventListener("click", () => validar(parseInt(input.value), index));
 });
 
 //Validar cantidad de productos ingresada por el usuario sea menor o igual ala cantidad de productos disponibles y mayor o igualque 0
