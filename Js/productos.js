@@ -55,8 +55,14 @@ function validar(cantidad,btnId){
         if ((cantidad>0)&&(0<=(arrStock[btnId]-cantidad))){
             comprar(cantidad, btnId);            
         } else {
-            alert("El valor ingresado supera el stock disponible de " + arrProductos[btnId] + " o es un valor invalido, porfavor intente nuevamente."); 
-        }
+            
+            Swal.fire({
+                icon: "error",
+                title: "El valor ingresado supera el stock disponible de " + arrProductos[btnId],
+                text: "O es un valor invalido, porfavor intente nuevamente.",               
+              });
+ 
+        }   
         }
 
 //Sumar los valores y Hacer la compra
@@ -73,9 +79,33 @@ function comprar(cantidad, btnId){
 document.getElementById("finCompra").addEventListener("click", () => {
     
     if(totalSuma==0){
-        alert("CARRO VACIO, agregue productos e intente nuevamente, Gracias!")
+        
+        Swal.fire({
+            title: "CARRO VACIO",
+            text: "Agregue productos e intente nuevamente, Gracias!",
+            icon: "question"
+          });
     } else {
-    alert("Gracias por comprar en Supermercados El Trigal. El total a pagar es: $" + totalSuma)
+    
+
+    Swal.fire({
+        title: "Desea confirmar la compra?",
+        text: "¡No podrás revertir esto! El total ahora es $"+ totalSuma,
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, confirmar compra"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Compra confirmada!",
+            text: "El total es $"+ totalSuma +". Sus productos llegaran pronto!",
+            icon: "success"
+          });
+        }
+      });
+
     }  }) 
 
 
