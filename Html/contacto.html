@@ -42,27 +42,25 @@
         </div>
         <form action="" class="contacto">
             <label for="Nombre" >Nombre: </label>
-            <input type="text" id="nombre" placeholder=" Inserte su nombre aquí" > 
+            <input type="text" id="nombre" required placeholder=" Inserte su nombre aquí" > 
             <label for="Apellido" >Apellido: </label>
-            <input type="text" id="apellido" placeholder=" Inserte su apellido aquí">
+            <input type="text" id="apellido"  required placeholder=" Inserte su apellido aquí">
             <label for="Email" >Email: </label>
-            <input type="email" id="email" placeholder=" Inserte su email aquí">
+            <input type="email" id="email" required placeholder=" Inserte su email aquí">
             <label for="Telefono" >Teléfono: </label>
-            <input type="tel" id="tel" placeholder=" Inserte su teléfono aquí">
+            <input type="tel" id="tel" required placeholder=" Inserte su teléfono aquí">
             <label for="Consulta" id="consulta">Ingrese su consulta: </label>
-            <textarea name="consultaUser" id="consultaUser" placeholder=" Ingrese su consulta aqui"></textarea>
+            <textarea name="consultaUser" id="consultaUser" required placeholder=" Ingrese su consulta aqui"></textarea>
             <button id="btnEnviar" class="btnEnviar">Enviar</button>
         </form>       
     </div>
-
-
-
 
 
 </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../Js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <footer>
         <div class="contFooter">
             <p>2024 Supermercado El Trigal - Todos los derechos reservados.</p>
